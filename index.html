@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="lv" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mans Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Mans Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Sākums</a></li>
+                    <li><a href="about.html">Par mani</a></li>
+                    <li><a href="projects.html">Projekti</a></li>
+                    <li><a href="contact.html">Kontakti</a></li>
+                    <li><button id="theme-toggle" aria-label="Pārslēgt tēmu"></button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Sveicināti manā portfolio mājaslapā!</h2>
+            <p>Esmu pilna entuziasma web izstrādātājs ar pieredzi mūsdienīgu lietojumprogrammu izveidē.</p>
+        </section>
+
+        <section class="featured-projects">
+            <h2>Izvēlētie projekti</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <img src="images/project1.png" alt="Projekta attēls">
+                    <h3>Personīgā mājaslapa</h3>
+                    <p>Responsīva portfolio mājaslapa ar tēmu pārslēgšanu</p>
+                    <a href="projects.html#project1">Skatīt vairāk</a>
+                </article>
+                <article class="project-card">
+                    <img src="images/project2.png" alt="Projekta attēls">
+                    <h3>Ēdiena pasūtīšanas mājaslapa</h3>
+                    <p>Vienkarša mājaslapa ēdiena pasūtīšanai</p>
+                    <a href="projects.html#project2">Skatīt vairāk</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://linkedin.com" aria-label="LinkedIn">
+                    <img src="images/linkein-icon.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com" aria-label="GitHub">
+                    <img src="images/github-icon.png" alt="GitHub">
+                </a>
+                <a href="https://x.com" aria-label="X(Twitter)">
+                    <img src="images/x-icon.png" alt="X">
+                </a>
+            </div>
+            <p>&copy; <span id="current-year"></span> Mans Portfolio. Visas tiesības aizsargātas.</p>
+        </div>
+    </footer>
+
+    <script src="js/theme-switcher.js"></script>
+</body>
+</html>
