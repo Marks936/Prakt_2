@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Par mani - Marks Pavlovs, programmēšanas tehniķis">
     <title>Par mani | Mans Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="css/style.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"></noscript>
 </head>
 <body>
     <header>
@@ -27,7 +33,7 @@
         <section class="bio">
             <h2>Par mani</h2>
             <div class="bio-content">
-                <img src="images/profile.webp" alt="Mans profila attēls" class="profile-img">
+                <img src="images/profile.webp" alt="Mans profila attēls" class="profile-img" width="300" height="300" loading="lazy">
                 <div class="bio-text">
                     <p>Sveiki! Esmu Marks Pavlovs, programmēšanas tehniķis no Rīgas. Mani interesē web izstrāde, dizains un jaunas tehnoloģijas.</p>
                     <p>Mans ceļojums programmēšanas pasaulē sākās 2020. gadā, kad sāku mācīties pašmācības ceļā. Kopš tā laika esmu strādājis pie dažādiem projektiem un apguvis jaunas prasmes.</p>
@@ -59,20 +65,21 @@
     <footer>
         <div class="footer-content">
             <div class="social-links">
-                <a href="https://linkedin.com" aria-label="LinkedIn">
-                    <img src="images/linkein-icon.png" alt="LinkedIn">
+                <a href="https://linkedin.com" aria-label="LinkedIn" rel="noopener noreferrer">
+                    <img src="images/linkein-icon.svg" alt="LinkedIn" width="24" height="24" loading="lazy">
                 </a>
-                <a href="https://github.com" aria-label="GitHub">
-                    <img src="images/github-icon.png" alt="GitHub">
+                <a href="https://github.com" aria-label="GitHub" rel="noopener noreferrer">
+                    <img src="images/github-icon.svg" alt="GitHub" width="24" height="24" loading="lazy">
                 </a>
-                <a href="https://x.com" aria-label="X(Twitter)">
-                    <img src="images/x-icon.png" alt="X">
+                <a href="https://x.com" aria-label="X(Twitter)" rel="noopener noreferrer">
+                    <img src="images/x-icon.svg" alt="X" width="24" height="24" loading="lazy">
                 </a>
             </div>
             <p>&copy; <span id="current-year"></span> Mans Portfolio. Visas tiesības aizsargātas.</p>
         </div>
     </footer>
 
-    <script src="js/theme-switcher.js"></script>
+    <script src="js/theme-switcher.js" defer></script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>
