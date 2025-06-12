@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mani projekti - Portfolio darbu kolekcija">
     <title>Projekti | Mans Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="css/style.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"></noscript>
 </head>
 <body>
     <header>
@@ -32,7 +38,7 @@
                     <h3>Personīgā mājaslapa</h3>
                     <span class="project-date">2025. gads</span>
                 </div>
-                <img src="images/project1.png" alt="Personīgās mājaslapas screenshot" class="project-image">
+                <img src="images/project1.webp" alt="Personīgās mājaslapas screenshot" class="project-image" width="800" height="450" loading="lazy">
                 <div class="project-description">
                     <p>Statiska responsīva mājaslapa, izveidota ar HTML, CSS un JavaScript. Ietver tumšo/gaišo režīmu, vairākas lapas un kontaktu formu.</p>
                     <h4>Izmantotās tehnoloģijas:</h4>
@@ -42,7 +48,7 @@
                         <li>JavaScript</li>
                         <li>Git versiju kontrole</li>
                     </ul>
-                    <a href="https://marks936.github.io/Prakt_2" class="project-link">Apskatīt projektu</a>
+                    <a href="https://marks936.github.io/Prakt_2" class="project-link" rel="noopener noreferrer">Apskatīt projektu</a>
                 </div>
             </article>
 
@@ -51,7 +57,7 @@
                     <h3>Ēdiena pasūtīšanas mājaslapa</h3>
                     <span class="project-date">2025. gads</span>
                 </div>
-                <img src="images/project2.png" alt="Ēdiena pasūtīšanas mājaslapas screenshot" class="project-image">
+                <img src="images/project2.webp" alt="Ēdiena pasūtīšanas mājaslapas screenshot" class="project-image" width="800" height="450" loading="lazy">
                 <div class="project-description">
                     <p>Vienkārša ēdiena pasūtīšanas mājaslapa. Lietotāji var izvēlēties ēdienu un pasūtīt to.</p>
                     <h4>Izmantotās tehnoloģijas:</h4>
@@ -61,7 +67,7 @@
                         <li>JavaScript</li>
                         <li>Git versiju kontrole</li>
                     </ul>
-                    <a href="https://marks936.github.io/prakt_1" class="project-link">Apskatīt projektu</a>
+                    <a href="https://marks936.github.io/prakt_1" class="project-link" rel="noopener noreferrer">Apskatīt projektu</a>
                 </div>
             </article>
         </section>
@@ -70,20 +76,21 @@
     <footer>
         <div class="footer-content">
             <div class="social-links">
-                <a href="https://linkedin.com" aria-label="LinkedIn">
-                    <img src="images/linkein-icon.png" alt="LinkedIn">
+                <a href="https://linkedin.com" aria-label="LinkedIn" rel="noopener noreferrer">
+                    <img src="images/linkein-icon.svg" alt="LinkedIn" width="24" height="24" loading="lazy">
                 </a>
-                <a href="https://github.com" aria-label="GitHub">
-                    <img src="images/github-icon.png" alt="GitHub">
+                <a href="https://github.com" aria-label="GitHub" rel="noopener noreferrer">
+                    <img src="images/github-icon.svg" alt="GitHub" width="24" height="24" loading="lazy">
                 </a>
-                <a href="https://x.com" aria-label="X(Twitter)">
-                    <img src="images/x-icon.png" alt="X">
+                <a href="https://x.com" aria-label="X(Twitter)" rel="noopener noreferrer">
+                    <img src="images/x-icon.svg" alt="X" width="24" height="24" loading="lazy">
                 </a>
             </div>
             <p>&copy; <span id="current-year"></span> Mans Portfolio. Visas tiesības aizsargātas.</p>
         </div>
     </footer>
 
-    <script src="js/theme-switcher.js"></script>
+    <script src="js/theme-switcher.js" defer></script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>
